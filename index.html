@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+
+
+<body>
+    <div class="mobile-view">
+        <div class="header">
+            <div class="header-content">
+                <div class="day">Tuesday</div>
+                <div class="date">20 Jun 2022</div>
+                <div class="location">
+                    <img src="assets/outline-navigation-location.svg" alt="Location Icon">
+                    <span>Biarritz, FR</span>
+                </div>
+            </div>
+            <div class="weather-info">
+                <img src="assets/outline-general-sun-2.svg"  alt="Sun Icon">
+                <span class="temperature">29 °C</span>
+                <span class="condition">Sunny</span>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="detail">
+                <span class="title">PRECIPITATION</span>
+                <span class="value">0%</span>
+            </div>
+            <div class="detail">
+                <span class="title">HUMIDITY</span>
+                <span class="value">42%</span>
+            </div>
+            <div class="detail">
+                <span class="title">WIND</span>
+                <span class="value">3 km/h</span>
+            </div>
+        </div>
+        <!--Creating the outer wrapper.-->
+        <div class="forecast-wrapper">
+            <div class="forecast">
+                <div class="forecast-day active">
+                    <img src="assets/outline-general-sun.svg" class="forecast-og-info" alt="Sun Icon">
+                    <span class="day forecast-og-info" >Tue</span>
+                    <span class="temp forecast-og-info" >30 °C</span>
+                    <!--This is what will show when the item has a mouse
+                    hovering over it.-->
+                    <div class="forecast-hover-top">
+                        <img src="assets/outline-general-sun.svg" alt="Sun Icon">
+                        <span>Tue 30 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>Feels Like</span>
+                        <span class="forecast-bolder-font">28 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>UV Index</span>
+                        <span class="forecast-bolder-font">0 of 11</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <img src="assets/bi-cloud-sun.svg" class="forecast-og-info" alt="Cloud Sun Icon">
+                    <span class="day forecast-og-info" >Wed</span>
+                    <span class="temp forecast-og-info" >22 °C</span>
+                    <!--This is what will show when the item has a mouse
+                    hovering over it.-->
+                    <div class="forecast-hover-top">
+                        <img src="assets/bi-cloud-sun.svg" alt="Cloud Sun Icon">
+                        <span>Wed 22 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>Feels Like</span>
+                        <span class="forecast-bolder-font">23 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>UV Index</span>
+                        <span class="forecast-bolder-font">0 of 11</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <img src="assets/bi-cloud-rain.svg" class="forecast-og-info" alt="Rain Icon">
+                    <span class="day forecast-og-info" >Thu</span>
+                    <span class="temp forecast-og-info" >06 °C</span>
+                    <!--This is what will show when the item has a mouse
+                    hovering over it.-->
+                    <div class="forecast-hover-top">
+                        <img src="assets/bi-cloud-rain.svg" alt="Rain Icon">
+                        <span>Thu 06 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>Feels Like</span>
+                        <span class="forecast-bolder-font">09 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>UV Index</span>
+                        <span class="forecast-bolder-font">0 of 11</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <img src="assets/bi-cloud-rain.svg" class="forecast-og-info" alt="Rain Icon">
+                    <span class="day forecast-og-info" >Fri</span>
+                    <span class="temp forecast-og-info" >20 °C</span>
+                    <!--This is what will show when the item has a mouse
+                    hovering over it.-->
+                    <div class="forecast-hover-top">
+                        <img src="assets/bi-cloud-rain.svg" alt="Rain Icon">
+                        <span>Fri 20 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>Feels Like</span>
+                        <span class="forecast-bolder-font">18 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>UV Index</span>
+                        <span class="forecast-bolder-font">0 of 11</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <img src="assets/bi-cloud-rain.svg" class="forecast-og-info" alt="Rain Icon">
+                    <span class="day forecast-og-info" >Sat</span>
+                    <span class="temp forecast-og-info" >10 °C</span>
+                    <!--This is what will show when the item has a mouse
+                    hovering over it.-->
+                    <div class="forecast-hover-top">
+                        <img src="assets/bi-cloud-rain.svg" alt="Rain Icon">
+                        <span>Sat 10 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>Feels Like</span>
+                        <span class="forecast-bolder-font">18 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>UV Index</span>
+                        <span class="forecast-bolder-font">0 of 11</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <img src="assets/bi-cloud-rain.svg" class="forecast-og-info" alt="Rain Icon">
+                    <span class="day forecast-og-info" >Sun</span>
+                    <span class="temp forecast-og-info" >22 °C</span>
+                    <!--This is what will show when the item has a mouse
+                    hovering over it.-->
+                    <div class="forecast-hover-top">
+                        <img src="assets/bi-cloud-rain.svg" alt="Rain Icon">
+                        <span>Sun 22 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>Feels Like</span>
+                        <span class="forecast-bolder-font">18 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>UV Index</span>
+                        <span class="forecast-bolder-font">0 of 11</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <img src="assets/bi-cloud-rain.svg" class="forecast-og-info" alt="Rain Icon">
+                    <span class="day forecast-og-info" >Mon</span>
+                    <span class="temp forecast-og-info" >27 °C</span>
+                    <!--This is what will show when the item has a mouse
+                    hovering over it.-->
+                    <div class="forecast-hover-top">
+                        <img src="assets/bi-cloud-rain.svg" alt="Rain Icon">
+                        <span>Mon 27 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>Feels Like</span>
+                        <span class="forecast-bolder-font">25 °C</span>
+                    </div>
+                    <div class="forecast-hover-bottom">
+                        <span>UV Index</span>
+                        <span class="forecast-bolder-font">0 of 11</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+   
+        <div class="map">
+            <img src="assets/frame-20.svg" class="mapName" alt="Map Image">
+        </div>
+
+        <div class="change-location">
+            <img src="assets/outline-navigation-location.svg" alt="Location Icon">
+            <span>Change Location</span>
+        </div>
+    </div>
+</body>
+
+</html>
